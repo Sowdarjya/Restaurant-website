@@ -94,3 +94,80 @@
     color: var(--tertiary-clr);
     cursor: pointer;
 }
+#services{
+    width: 100%;
+    height: auto;
+    background: var(--tertiary-clr);
+}
+#services h1{
+    text-align: center;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    padding: 1rem 0rem 1rem 0rem;
+    background: linear-gradient(to right, var(--secondary-clr), var(--primary-clr));
+    color: var(--tertiary-clr);
+    margin: 0 0 2rem 0;
+    border-radius: 2rem;
+}
+#services .container{
+    padding: 3rem;
+}
+#services .container .row{
+    display: flex;
+    justify-content: space-between;
+}
+#services .container .row .service-card{
+    text-align:center;
+    width: 31%;
+    height: 25rem;
+    margin: 0 0.3rem 0 0.3rem;
+    background: linear-gradient(to top right, var(--secondary-clr) 50%, var(--primary-clr) 70%);
+    padding: 1.2rem;
+    border-radius: 3rem;
+    transition: all 0.5s ease-in-out;
+}
+#services .container .row .service-img{
+    height: 10rem;
+    padding: 0.7rem;
+}
+#services .container .row h3{
+    text-transform: uppercase;
+    color: var(--tertiary-clr);
+    margin-bottom: 0.4rem;
+    font-size: 1.5rem;
+}
+#services .container .row p{
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+}
+#services .container .row .service-card:hover{
+    cursor: pointer;
+    width: 32%;
+}
+#platforms{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 10rem;
+    background: linear-gradient(to bottom left, var(--secondary-clr) 50%, var(--primary-clr) 70%);
+}
+#platforms .container{
+    border-radius: 3rem;
+    background: var(--tertiary-clr);
+}
+#platforms p{
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    color: var(--secondary-clr);
+}
+#platforms .row{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content:center;
+    padding: 0 5rem;
+}
+#platforms .row img{
+    width: 5rem;
+    margin: 1rem 3rem;
+}

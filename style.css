@@ -7,8 +7,8 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 :root{
-    --primary-clr: hsl(60, 100%, 70%);
-    --secondary-clr: hsl(50, 100%, 61%);
+    --primary-clr: #ffff66;
+    --secondary-clr: #ffde38;
     --tertiary-clr: hsl(206, 100%, 6%);
 }
 #navigation{
@@ -30,16 +30,43 @@
 }
 #navigation .navbar ul li{
     font-size: 1.2rem;
-    margin: 0.3rem;
+    margin: 0.3rem 0.5rem 0.3rem 0.5rem;
     text-transform: uppercase;
     font-weight: 400;
     padding: 0.3rem;
     transition: all 0.5s ease;
+    border-radius: 0.7rem;
 }
 #navigation .navbar ul li:hover{
-    border: 1px solid var(--tertiary-clr);
     cursor: pointer;
-    border-radius: 0.7rem;
     background: var(--tertiary-clr);
     color: var(--secondary-clr);
+}
+#hero{
+    width: 100%;
+    height: 100vh;
+    background: url(./img/layered-waves-haikei.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+#hero .container{
+    padding: 2rem;
+}
+#hero .container .row{
+    display: flex;
+}
+#hero .container .row .hero-img{
+    width: 35%;
+    height: auto;
+}
+#hero .container .row .hero-img img{
+    height: 25rem;
+}
+#hero .container .row .hero-text{
+    width: 60%;
+    height: auto;
+    font-size: 2.5rem;
+    color: var(--primary-clr);
 }

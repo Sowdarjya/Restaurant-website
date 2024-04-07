@@ -5,6 +5,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-style: none;
 }
 :root{
     --primary-clr: #ffff66;
@@ -75,4 +76,21 @@
     color: var(--primary-clr);
     padding: 8rem 0 0 0;
     text-transform: uppercase;
+}
+#hero .container .row .hero-text .hero-btn{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--secondary-clr);
+    padding: 0.9rem;
+    background: var(--tertiary-clr);
+    margin-top: 1.2rem;
+    margin-right: 0.6rem;
+    border: 2px solid var(--secondary-clr);
+    border-radius: 2rem;
+    transition: all 0.5s;
+}
+#hero .container .row .hero-text .hero-btn:hover{
+    background: var(--secondary-clr);
+    color: var(--tertiary-clr);
+    cursor: pointer;
 }

@@ -9,8 +9,8 @@
 }
 :root{
     --primary-clr: hsl(60, 100%, 70%);
-    --secondary-clr: hsl(50, 100%, 61%);
-    --tertiary-clr: hsl(206, 100%, 6%);
+    --secondary-clr: #ffde38;
+    --tertiary-clr: #00111f;
 }
 #navigation{
     display: flex;
@@ -160,8 +160,8 @@
     width: 32%;
 }
 #platforms{
-    width: 100%;
     text-align: center;
+    width: 100%;
     padding: 1rem 10rem;
     background: linear-gradient(to bottom left, var(--secondary-clr) 50%, var(--primary-clr) 70%);
 }
@@ -185,4 +185,54 @@
 #platforms .row img{
     width: 5rem;
     margin: 1rem 3rem;
+}
+#menu{
+    width: 100%;
+    height: auto;
+    /* background: url(./img/blob-scene-haikei\ \(1\).svg); */
+    background: url(./img/exploding-burger-with-vegetables-melted-cheese-black-background-generative-ai_157027-1734.avif) #02192d;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem;
+    text-align: center;
+}
+#menu h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--secondary-clr);
+    padding-bottom: 2rem;
+}
+#menu .container .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu .container .row .menu-1{
+    border: 2px solid var(--secondary-clr); 
+    padding: 1.5rem; 
+    width: 50%;  
+}
+#menu .container .row .menu-2{
+    border: 2px solid var(--secondary-clr);
+    padding: 1.5rem;
+    width: 50%;
+}
+#menu .container .row .menu-1 h2, .menu-2 h2{
+    margin: 0.5rem 0;
+    color: var(--primary-clr);
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: all 0.3s ease-in;
+    /* padding: 1px; */
+}
+#menu .container .row .menu-1 h2:hover, .menu-2 h2:hover{
+    font-size: 1.3rem;
+    cursor: pointer;
+    background: var(--secondary-clr);
+    color: var(--tertiary-clr);
+}
+#menu .container .row .menu-1 span, .menu-2 span{
+    margin-left: 2rem;
 }

@@ -12,6 +12,21 @@
     --secondary-clr: #ffde38;
     --tertiary-clr: #00111f;
 }
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--tertiary-clr);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary-clr);
+    border-radius: 1rem;
+    border: 0.3rem solid transparent;
+    background-clip: content-box;
+}
+html{
+    scroll-behavior: smooth;
+}
 #navigation{
     display: flex;
     align-items: center;
@@ -31,7 +46,7 @@
 #navigation .navbar ul{
     display: flex;
 }
-#navigation .navbar ul li{
+#navigation .navbar ul li a{
     font-size: 1.2rem;
     margin: 0.3rem 0.5rem 0.3rem 0.5rem;
     text-transform: uppercase;
@@ -39,8 +54,9 @@
     padding: 0.3rem;
     transition: all 0.5s ease;
     border-radius: 0.7rem;
+    color: var(--tertiary-clr);
 }
-#navigation .navbar ul li:hover{
+#navigation .navbar ul li a:hover{
     cursor: pointer;
     background: var(--tertiary-clr);
     color: var(--secondary-clr);
@@ -198,7 +214,7 @@
     padding: 3rem;
     text-align: center;
 }
-#menu h1{
+#menu .heading{
     font-size: 2rem;
     text-transform: uppercase;
     color: var(--secondary-clr);
@@ -218,6 +234,15 @@
     border: 2px solid var(--secondary-clr);
     padding: 1.5rem;
     width: 50%;
+}
+#menu .container .row .menu-1 h1, .menu-2 h1{
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--tertiary-clr);
+    background: var(--secondary-clr);
+    margin-bottom: 0.2rem;
+    border-radius: 1rem;
 }
 #menu .container .row .menu-1 h2, .menu-2 h2{
     margin: 0.5rem 0;

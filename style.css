@@ -225,10 +225,9 @@
     font-size: 1.2rem;
     font-weight: 400;
     transition: all 0.3s ease-in;
-    /* padding: 1px; */
+    border-radius: 1rem;
 }
 #menu .container .row .menu-1 h2:hover, .menu-2 h2:hover{
-    /* font-size: 1.3rem; */
     cursor: pointer;
     background: var(--secondary-clr);
     color: var(--tertiary-clr);

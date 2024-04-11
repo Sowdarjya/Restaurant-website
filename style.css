@@ -202,3 +202,78 @@ html{
     width: 5rem;
     margin: 1rem 3rem;
 }
+#reviews{
+    width: 100%;
+    height: auto;
+    padding: 1rem 1.5rem;
+    background: url(./img/exploding-burger-with-vegetables-melted-cheese-black-background-generative-ai_157027-1734.avif) var(--tertiary-clr);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#reviews h1{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--secondary-clr);
+    padding: 1.5rem 0;
+}
+#reviews .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#reviews .ratings{
+    width: 50%;
+    height: 18rem;
+    background: linear-gradient(to top right, var(--secondary-clr) 50%, var(--primary-clr) 70%);
+}
+#reviews .testimonials{
+    width: 49%;
+    height: 18rem;
+    background: linear-gradient(to top left, var(--secondary-clr) 50%, var(--primary-clr) 70%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+}
+.testimonial-container{
+    width: 85%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    padding: 1rem;
+}
+#reviews .container button{
+    font-size: 1.6rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: var(--tertiary-clr);
+    position: relative;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    color: var(--secondary-clr);
+    cursor: pointer;
+    border-radius: 2rem;
+}
+.testimonial-container p{
+    color: var(--tertiary-clr);
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+}
+.testimonial-container img{
+    display: block;
+    margin: 1rem auto;
+    border-radius: 50%;
+    width: 5rem;
+}
+.testimonial-container h3{
+    color: var(--tertiary-clr);
+    font-size: 0.8rem;
+    text-align: center;
+}

@@ -82,17 +82,17 @@ html{
     height: auto;
 }
 #hero .container .row .hero-img img{
-    width: 45rem;
-    padding: 3rem 3rem 0 0;
+    width: 35rem;
+    padding: 3rem 3rem 2rem 5rem;
 }
 #hero .container .row .hero-text{
-    width: 45%;
+    width: 55%;
     height: auto;
 }
 #hero .container .row .hero-text h1{
-    font-size: 5rem;
+    font-size: 6rem;
     color: var(--primary-clr);
-    padding: 8rem 0 0 0;
+    padding: 6rem 0 0 0;
     text-transform: uppercase;
 }
 #hero .container .row .hero-text .hero-btn{
@@ -201,62 +201,4 @@ html{
 #platforms .row img{
     width: 5rem;
     margin: 1rem 3rem;
-}
-#menu{
-    width: 100%;
-    height: auto;
-    /* background: url(./img/blob-scene-haikei\ \(1\).svg); */
-    background: url(./img/exploding-burger-with-vegetables-melted-cheese-black-background-generative-ai_157027-1734.avif) #02192d;
-    background-blend-mode: overlay;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 3rem;
-    text-align: center;
-}
-#menu .heading{
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: var(--secondary-clr);
-    padding-bottom: 2rem;
-}
-#menu .container .row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#menu .container .row .menu-1{
-    border: 2px solid var(--secondary-clr); 
-    padding: 1.5rem; 
-    width: 50%;  
-}
-#menu .container .row .menu-2{
-    border: 2px solid var(--secondary-clr);
-    padding: 1.5rem;
-    width: 50%;
-}
-#menu .container .row .menu-1 h1, .menu-2 h1{
-    padding: 0.5rem;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    color: var(--tertiary-clr);
-    background: var(--secondary-clr);
-    margin-bottom: 0.2rem;
-    border-radius: 1rem;
-}
-#menu .container .row .menu-1 h2, .menu-2 h2{
-    margin: 0.5rem 0;
-    color: var(--primary-clr);
-    font-size: 1.2rem;
-    font-weight: 400;
-    transition: all 0.3s ease-in;
-    border-radius: 1rem;
-}
-#menu .container .row .menu-1 h2:hover, .menu-2 h2:hover{
-    cursor: pointer;
-    background: var(--secondary-clr);
-    color: var(--tertiary-clr);
-}
-#menu .container .row .menu-1 span, .menu-2 span{
-    margin-left: 2rem;
 }

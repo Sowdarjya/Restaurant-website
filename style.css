@@ -242,6 +242,7 @@ html{
 }
 #reviews .container .ratings .fa-star{
     font-size: 2.5rem;
+    color: var(--tertiary-clr);
 }
 #reviews .testimonials{
     width: 49%;

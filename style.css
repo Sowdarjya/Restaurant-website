@@ -33,8 +33,6 @@ html{
     justify-content: space-between;
     padding: 0.3rem;
     background: linear-gradient(to right, var(--secondary-clr), var(--primary-clr));
-    position: sticky;
-    top: 0;
 }
 #navigation p{
     font-size: 1.5rem;
@@ -342,11 +340,11 @@ html{
     color: var(--secondary-clr);
     font-size: 1.5rem;
     text-transform: capitalize;
-    padding: 0.4rem;
+    padding: 0.6rem;
     margin: 0.7rem 0;
     background: transparent;
     border: 1px solid var(--secondary-clr);
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     transition: all 0.5s ease-in;
 }
 #about .container .row .about-text button:hover{

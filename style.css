@@ -294,3 +294,65 @@ html{
     font-size: 1.5rem;
     text-align: center;
 }
+#about{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    background: var(--secondary-clr);
+}
+#about .container{
+    background: var(--tertiary-clr);
+    padding: 2rem;
+    border-radius: 1.3rem;
+}
+#about .container .row{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+#about .container .row .about-img{
+    width: 50%;
+}
+#about .container .row .about-img img{
+    width: 30rem;
+    height: 20rem;
+}
+#about .container .row .about-text{
+    width: 50%;
+}
+#about .container .row .about-text h3{
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 0.3rem;
+    color: var(--tertiary-clr);
+    text-transform: uppercase;
+    margin: 0.5rem 0;
+    background: var(--secondary-clr);
+}
+#about .container .row .about-text h1{
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    color: var(--secondary-clr);
+}
+#about .container .row .about-text p{
+    font-size: 1.3rem;
+    color: var(--secondary-clr);
+}
+#about .container .row .about-text button{
+    color: var(--secondary-clr);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 0.4rem;
+    margin: 0.7rem 0;
+    background: transparent;
+    border: 1px solid var(--secondary-clr);
+    border-radius: 1.5rem;
+    transition: all 0.5s ease-in;
+}
+#about .container .row .about-text button:hover{
+    background: var(--secondary-clr);
+    color: var(--tertiary-clr);
+    cursor: pointer;
+    box-shadow:  0 0 0.3rem var(--secondary-clr);
+    font-size: 1.6rem;
+}

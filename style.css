@@ -225,7 +225,7 @@ html{
     justify-content: space-between;
 }
 #reviews .ratings{
-    width: 50%;
+    width: 29%;
     height: 18rem;
     background: linear-gradient(to top right, var(--secondary-clr) 50%, var(--primary-clr) 70%);
     border-radius: 2rem;
@@ -245,7 +245,7 @@ html{
     color: var(--tertiary-clr);
 }
 #reviews .testimonials{
-    width: 49%;
+    width: 70%;
     height: 18rem;
     background: linear-gradient(to top left, var(--secondary-clr) 50%, var(--primary-clr) 70%);
     display: flex;
@@ -278,19 +278,19 @@ html{
 .testimonial-container p{
     color: var(--tertiary-clr);
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     line-height: 1.2rem;
     font-weight: 600;
 }
 .testimonial-container img{
     display: block;
-    margin: 1rem auto;
+    margin: 0.7rem auto;
     border-radius: 50%;
     width: 5rem;
-    height: 4rem;
+    height: 5rem;
 }
 .testimonial-container h3{
     color: var(--tertiary-clr);
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     text-align: center;
 }

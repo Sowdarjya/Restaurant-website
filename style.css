@@ -354,3 +354,42 @@ html{
     box-shadow:  0 0 0.3rem var(--secondary-clr);
     font-size: 1.6rem;
 }
+#contact{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    background: url(./img/contact-img.jpg) var(--tertiary-clr);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#contact .container .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact .container .row .contact-details{
+    width: 50%;
+    text-align: start;
+}
+#contact .container .row .contact-details .element{
+    padding: 1.2rem;
+}
+#contact .container .row .contact-details .element .fa-solid{
+    font-size: 1rem;
+    color: var(--tertiary-clr);
+    background: var(--primary-clr);
+    padding: 0.3rem;
+    border-radius: 2rem;
+    margin: 0.5rem 0;
+}
+#contact .container .row .contact-details .element h3{
+    color: var(--primary-clr);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+#contact .container .row .contact-details .element p{
+    color: var(--primary-clr);
+}

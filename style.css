@@ -64,13 +64,13 @@ html{
 .menu-icons{
     display: none;
 }
-.menu-bar{
+#menu-bar{
     color: var(--tertiary-clr);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
-.menu-cross{
+#menu-cross{
     color: var(--tertiary-clr);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 @media (max-width: 750px) {

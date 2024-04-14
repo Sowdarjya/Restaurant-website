@@ -1,3 +1,23 @@
+const menuBar = document.getElementById("menu-bar");
+const menuCross = document.getElementById("menu-cross");
+const navBar = document.getElementById("nav-list");
+
+function openMenu() {
+    navBar.style.top = "35px";
+    menuCross.style.visibility = "visible";
+    menuBar.style.visibility = "hidden";
+}
+
+function closeMenu() {
+    navBar.style.top = "-500px";
+    menuCross.style.visibility = "hidden";
+    menuBar.style.visibility = "visible";
+}
+
+
+
+
+
 const reviews = [{
     review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est culpa animi qui labore ullam placeat inventore magni, provident vel cupiditate assumenda error exercitationem quas enim sed fugit officia voluptate. Laborum facilis commodi omnis labore! Eum quasi ex harum deserunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ut.",
     name: "Candice Johnson",

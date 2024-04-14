@@ -61,6 +61,40 @@ html{
     background: var(--tertiary-clr);
     color: var(--secondary-clr);
 }
+.menu-icons{
+    display: none;
+}
+.menu-bar{
+    color: var(--tertiary-clr);
+    font-size: 1.5rem;
+}
+.menu-cross{
+    color: var(--tertiary-clr);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 750px) {
+    #navigation .navbar ul{
+        flex-direction: column;
+        position: absolute;
+        padding: 2rem 0;
+        text-align: center;
+        left: 0;
+        top: -500px;
+        right: 0;
+        background: linear-gradient(to right, var(--secondary-clr), var(--primary-clr));
+        transition: all 0.5s;
+    }
+    #navigation .navbar ul li a{
+        line-height: 4rem;
+    }
+    .menu-icons{
+        display: block;
+    }
+    #menu-cross{
+        visibility: hidden;
+    }
+}
 #hero{
     width: 100%;
     height: 100vh;

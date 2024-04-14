@@ -32,6 +32,9 @@ html{
     justify-content: space-between;
     padding: 0.3rem;
     background: linear-gradient(to right, var(--secondary-clr), var(--primary-clr));
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 #navigation p{
     font-size: 1.5rem;
@@ -314,6 +317,7 @@ html{
 #about .container .row .about-img img{
     width: 30rem;
     height: 20rem;
+    border-radius: 1.2rem;
 }
 #about .container .row .about-text{
     width: 50%;
@@ -448,4 +452,5 @@ html{
     color: var(--primary-clr);
     background: var(--tertiary-clr);
     border-radius: 1rem;
+    cursor: pointer;
 }

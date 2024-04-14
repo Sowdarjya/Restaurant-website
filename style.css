@@ -5,7 +5,6 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-style: none;
 }
 :root{
     --primary-clr: hsl(60, 100%, 70%);
@@ -73,7 +72,7 @@ html{
 }
 #hero .container .row{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 #hero .container .row .hero-img{
     width: 45%;
@@ -86,11 +85,12 @@ html{
 #hero .container .row .hero-text{
     width: 55%;
     height: auto;
+    padding: 0 0 0 5rem;
 }
 #hero .container .row .hero-text h1{
-    font-size: 6rem;
+    font-size: 5rem;
     color: var(--primary-clr);
-    padding: 6rem 0 0 0;
+    padding: 7rem 0 0 0;
     text-transform: uppercase;
 }
 #hero .container .row .hero-text .hero-btn{
@@ -370,7 +370,7 @@ html{
     justify-content: center;
 }
 #contact .container .row .contact-details{
-    width: 50%;
+    width: 40%;
     text-align: start;
 }
 #contact .container .row .contact-details .element{
@@ -382,14 +382,70 @@ html{
     background: var(--primary-clr);
     padding: 0.3rem;
     border-radius: 2rem;
-    margin: 0.5rem 0;
 }
 #contact .container .row .contact-details .element h3{
     color: var(--primary-clr);
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+#contact .container .row .contact-details .element h3 span{
+    margin: 0 0.3rem 0 0;
 }
 #contact .container .row .contact-details .element p{
     color: var(--primary-clr);
+    font-size: 1.3rem;
+}
+#contact .container .row .contact-form{
+    width: 55%;
+    background: linear-gradient(155deg, var(--primary-clr), var(--secondary-clr) 70%);
+    text-align: center;
+    border-radius: 1.2rem;
+    padding: 1rem;
+}
+#contact .container .row .contact-form h2{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: var(--tertiary-clr);
+}
+#contact .container .row .contact-form hr{
+    background: var(--tertiary-clr);
+    height: 0.3rem;
+    width: 40%;
+    position: relative;
+    left: 30%;
+}
+#contact .container .row .contact-form form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+#contact .container .row .contact-form form .contact-element{
+    margin-bottom: 0.5rem;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    background-color: var(--tertiary-clr);
+    border-style: none;
+    color: var(--primary-clr);
+    border-radius: 1rem;
+    outline: none;
+}
+#contact .container .row .contact-form form textarea{
+    height: 10rem;
+}
+#contact .container .row .contact-form form .contact-element::placeholder{
+    color: var(--primary-clr);
+}
+#contact .container .row .contact-form form .contact-btn{
+    display: inline;
+    font-size: 1.2rem;
+    width: 20%;
+    position: relative;
+    left: 40%;
+    padding: 0.3rem;
+    text-transform: uppercase;
+    color: var(--primary-clr);
+    background: var(--tertiary-clr);
+    border-radius: 1rem;
 }

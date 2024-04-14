@@ -88,6 +88,10 @@ html{
     #navigation .navbar ul li a{
         line-height: 4rem;
     }
+    #navigation .navbar ul li a:hover{
+        background: var(--tertiary-clr);
+        color: var(--secondary-clr);
+    }
     .menu-icons{
         display: block;
     }

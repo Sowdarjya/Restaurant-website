@@ -14,10 +14,6 @@ function closeMenu() {
     menuBar.style.visibility = "visible";
 }
 
-
-
-
-
 const reviews = [{
     review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est culpa animi qui labore ullam placeat inventore magni, provident vel cupiditate assumenda error exercitationem quas enim sed fugit officia voluptate. Laborum facilis commodi omnis labore! Eum quasi ex harum deserunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ut.",
     name: "Candice Johnson",

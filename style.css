@@ -483,12 +483,11 @@ html{
     display: inline;
     font-size: 1.2rem;
     width: 20%;
-    position: relative;
-    left: 40%;
     padding: 0.3rem;
     text-transform: uppercase;
     color: var(--primary-clr);
     background: var(--tertiary-clr);
     border-radius: 1rem;
     cursor: pointer;
+    border-style: none;
 }

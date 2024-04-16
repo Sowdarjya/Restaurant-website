@@ -94,7 +94,9 @@ html{
     }
     .menu-icons{
         display: block;
+        cursor: pointer;
     }
+    /* cursor: pointer; */
     #menu-cross{
         visibility: hidden;
     }

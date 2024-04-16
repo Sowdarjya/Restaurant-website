@@ -94,7 +94,6 @@ html{
     }
     .menu-icons{
         display: block;
-        /* cursor: pointer; */
     }
     #menu-cross{
         visibility: hidden;
@@ -102,7 +101,9 @@ html{
     #menu-cross:hover{
         cursor: pointer;
     }
-
+    #menu-bar:hover{
+        cursor: pointer;
+    }
 }
 #hero{
     width: 100%;

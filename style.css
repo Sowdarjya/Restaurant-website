@@ -94,12 +94,15 @@ html{
     }
     .menu-icons{
         display: block;
-        cursor: pointer;
+        /* cursor: pointer; */
     }
     #menu-cross{
         visibility: hidden;
+    }
+    #menu-cross:hover{
         cursor: pointer;
     }
+
 }
 #hero{
     width: 100%;

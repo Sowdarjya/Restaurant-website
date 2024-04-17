@@ -187,6 +187,28 @@ html{
         margin: 0 0.2rem;
     }
 }
+@media (max-width: 790px) {
+    #hero .container .row .hero-img img {
+        width: 25rem;
+    }
+}
+/* @media (max-width: 670px) {
+    #hero .container .row .hero-img img {
+        width: 25rem;
+    }
+    #hero .container .row .hero-text h1{
+        font-size: 2.7rem;
+    }
+    #hero .container .row .hero-text .hero-btn{
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+    .fa-brands{
+        font-size: 1rem;
+        padding: 0.3rem;
+        margin: 0 0.2rem;
+    }
+} */
 #services{
     width: 100%;
     height: auto;

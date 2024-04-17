@@ -107,7 +107,7 @@ html{
 }
 #hero{
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     background: url(./img/layered-waves-haikei\ \(1\).svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -200,7 +200,6 @@ html{
     }
     #hero .container .row .hero-text h1{
         font-size: 2.3rem;
-        /* padding: 4rem 0 0 0; */
         position: relative;
         right: 20%;
         top: 10%;
@@ -213,9 +212,100 @@ html{
         top: 6%;
     }
     .fa-brands{
+        font-size: 0.8rem;
         position: relative;
         top: 6%;
         right: 20%;
+    }
+}
+@media (max-width: 585px) {
+    #hero{
+        height: 80vh;
+    }
+    #hero .container{
+        padding: 0.8rem;
+    }
+    #hero .container .row .hero-img{
+        width: 30%;
+    }
+    #hero .container .row .hero-img img {
+        width: 18rem;
+        position: relative;
+        top: 30%;
+    }
+    #hero .container .row .hero-text{
+        width: 70%;
+        padding: 0 0 0 10rem;
+    }
+    #hero .container .row .hero-text h1{
+        font-size: 1.8rem;
+        position: relative;
+        right: 20%;
+        top: 10%;
+    }
+    #hero .container .row .hero-text .hero-btn{
+        font-size: 0.6rem;
+        padding: 0.5rem;
+        position: relative;
+        right: 20%;
+        top: 6%;
+    }
+    .fa-brands{
+        font-size: 0.6rem;
+        position: relative;
+        top: 6%;
+        right: 20%;
+        margin: 0 0.1rem;
+        padding: 0.2rem;
+    }
+}
+@media (max-width: 490px) {
+    #hero{
+        height: 80vh;
+        background: var(--tertiary-clr);
+    }
+    #hero .container{
+        padding: 0.8rem;
+    }
+    #hero .container .row{
+        flex-direction: column;
+    }
+    #hero .container .row .hero-img{
+        height: 2rem;
+    }
+    #hero .container .row .hero-img img {
+        width: 18rem;
+        position: relative;
+        top: 30%;
+        left: 50%;
+    }
+    #hero .container .row .hero-text{
+        width: 100%;
+        padding: 0 0 0 13rem;
+        height: 17rem;
+        position: relative;
+        top: 4rem;
+    }
+    #hero .container .row .hero-text h1{
+        font-size: 1.8rem;
+        position: relative;
+        right: 20%;
+        top: 10%;
+    }
+    #hero .container .row .hero-text .hero-btn{
+        font-size: 0.6rem;
+        padding: 0.5rem;
+        position: relative;
+        right: 20%;
+        top: 6%;
+    }
+    .fa-brands{
+        font-size: 0.8rem;
+        position: relative;
+        top: 6%;
+        right: 20%;
+        margin: 0 0.1rem;
+        padding: 0.2rem;
     }
 }
 #services{

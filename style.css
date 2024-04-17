@@ -192,23 +192,32 @@ html{
         width: 25rem;
     }
 }
-/* @media (max-width: 670px) {
+@media (max-width: 670px) {
     #hero .container .row .hero-img img {
-        width: 25rem;
+        width: 20rem;
+        position: relative;
+        top: 20%;
     }
     #hero .container .row .hero-text h1{
-        font-size: 2.7rem;
+        font-size: 2.3rem;
+        /* padding: 4rem 0 0 0; */
+        position: relative;
+        right: 20%;
+        top: 10%;
     }
     #hero .container .row .hero-text .hero-btn{
-        font-size: 1rem;
-        padding: 0.7rem;
+        font-size: 0.9rem;
+        padding: 0.5rem;
+        position: relative;
+        right: 20%;
+        top: 6%;
     }
     .fa-brands{
-        font-size: 1rem;
-        padding: 0.3rem;
-        margin: 0 0.2rem;
+        position: relative;
+        top: 6%;
+        right: 20%;
     }
-} */
+}
 #services{
     width: 100%;
     height: auto;

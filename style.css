@@ -26,6 +26,35 @@
 html{
     scroll-behavior: smooth;
 }
+.container{
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+.section{
+    padding-block: 5rem 1rem;
+}
+.fill{
+    width: 250px;
+    height: 250px;
+    background: var(--tertiary-clr);
+    border: 8px solid var(--primary-clr);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.home-fill-content{
+    width: 180px;
+    height: 180px;border: 10px solid var(--primary-clr);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #navigation{
     display: flex;
     align-items: center;
@@ -34,7 +63,7 @@ html{
     background: linear-gradient(to right, var(--secondary-clr), var(--primary-clr));
     position: sticky;
     top: 0;
-    z-index: 3;
+    z-index: 5;
 }
 #navigation p{
     font-size: 1.5rem;
@@ -82,7 +111,7 @@ html{
         left: 0;
         top: -500px;
         right: 0;
-        background: linear-gradient(to right, var(--secondary-clr), var(--primary-clr));
+        background: linear-gradient(to right, var(--seconary-clr), var(--primary-clr));
         transition: all 0.5s;
     }
     #navigation .navbar ul li a{
@@ -105,7 +134,7 @@ html{
         cursor: pointer;
     }
 }
-#hero{
+/* #hero{
     width: 100%;
     height: 85vh;
     background: url(./img/layered-waves-haikei\ \(1\).svg);
@@ -169,143 +198,118 @@ html{
     background: var(--secondary-clr);
     color: var(--tertiary-clr);
     cursor: pointer;
+} */
+
+#home{
+    position: relative;
+    border-bottom: 8px solid var(--primary-clr);
+    background: var(--tertiary-clr);
 }
-@media (max-width: 1000px) {
-    #hero .container .row .hero-img img {
-        width: 28rem;
-    }
-    #hero .container .row .hero-text h1{
-        font-size: 2.7rem;
-    }
-    #hero .container .row .hero-text .hero-btn{
-        font-size: 1rem;
-        padding: 0.7rem;
-    }
-    .fa-brands{
-        font-size: 1rem;
-        padding: 0.3rem;
-        margin: 0 0.2rem;
-    }
+.rectangle{
+    width: 100%;
+    height: 220px;
+    background: var(--primary-clr);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
-@media (max-width: 790px) {
-    #hero .container .row .hero-img img {
-        width: 25rem;
-    }
+.home-container{
+    padding-block: 1rem 3rem;
 }
-@media (max-width: 670px) {
-    #hero .container .row .hero-img img {
-        width: 20rem;
-        position: relative;
-        top: 20%;
-    }
-    #hero .container .row .hero-text h1{
-        font-size: 2.3rem;
-        position: relative;
-        right: 20%;
-        top: 10%;
-    }
-    #hero .container .row .hero-text .hero-btn{
-        font-size: 0.9rem;
-        padding: 0.5rem;
-        position: relative;
-        right: 20%;
-        top: 6%;
-    }
-    .fa-brands{
-        font-size: 0.8rem;
-        position: relative;
-        top: 6%;
-        right: 20%;
-    }
+
+.home-fill{
+    justify-self: center;
+    z-index: 3;
 }
-@media (max-width: 585px) {
-    #hero{
-        height: 80vh;
-    }
-    #hero .container{
-        padding: 0.8rem;
-    }
-    #hero .container .row .hero-img{
-        width: 30%;
-    }
-    #hero .container .row .hero-img img {
-        width: 18rem;
-        position: relative;
-        top: 30%;
-    }
-    #hero .container .row .hero-text{
-        width: 70%;
-        padding: 0 0 0 10rem;
-    }
-    #hero .container .row .hero-text h1{
-        font-size: 1.8rem;
-        position: relative;
-        right: 20%;
-        top: 10%;
-    }
-    #hero .container .row .hero-text .hero-btn{
-        font-size: 0.6rem;
-        padding: 0.5rem;
-        position: relative;
-        right: 20%;
-        top: 6%;
-    }
-    .fa-brands{
-        font-size: 0.6rem;
-        position: relative;
-        top: 6%;
-        right: 20%;
-        margin: 0 0.1rem;
-        padding: 0.2rem;
-    }
+.home-img{
+    width: 170px;
 }
-@media (max-width: 490px) {
-    #hero{
-        height: 80vh;
-        background: var(--tertiary-clr);
+.home-info{
+    row-gap: 0.75rem;
+    text-align: center;
+}
+.home-name{
+    font-size: 2rem;
+    color: var(--secondary-clr);
+    text-transform: uppercase;
+}
+.home-txt{
+    font: 1.25rem;
+    color: var(--secondary-clr);
+    text-transform: uppercase;
+}
+.home-social{
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+.social-link{
+    font-size: 1.5rem;
+    color: var(--secondary-clr);
+    transition: color 0.4s;
+}
+.social-link:hover{
+    color: var(--primary-clr);
+}
+.home-btn{
+    justify-self: center;
+    font-size: 1rem;
+    display: inline-block;
+    background: var(--secondary-clr);
+    color: var(--tertiary-clr);
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    transition: all 0.4s;
+}
+.home-btn:hover{
+    background: var(--primary-clr);
+    cursor: pointer;
+    box-shadow: 0 0 0.2rem var(--secondary-clr);
+}
+@media screen and (min-width:1150px) {
+    .home-fill{
+        width: 450px;
+        height: 450px;
+        border-width: 15px;
     }
-    #hero .container{
-        padding: 0.8rem;
+    .home-fill-content{
+        width: 330px;
+        height: 330px;
+        border-width: 20px;
     }
-    #hero .container .row{
+    .home-img{
+        width: 300px;
+    }
+    .rectangle{
+        width: 30vw;
+        height: 100%;
+    }
+    .home-container{
+        position: relative;
+        grid-template-columns: 500px 300px;
+        align-items: center;
+        column-gap: 4rem;
+        padding-block: 3.5rem 8rem;
+    }
+    .home-content{
+        row-gap: 4rem;
+    }
+    .home-info{
+        row-gap: 1rem;
+        text-align: initial;
+    }
+    .home-social{
         flex-direction: column;
+        row-gap: 1.5rem;
+        position: absolute;
+        top: -4rem;
+        bottom: 0;
+        right: 0;
     }
-    #hero .container .row .hero-img{
-        height: 2rem;
-    }
-    #hero .container .row .hero-img img {
-        width: 18rem;
-        position: relative;
-        top: 30%;
-        left: 50%;
-    }
-    #hero .container .row .hero-text{
-        width: 100%;
-        padding: 0 0 0 13rem;
-        height: 17rem;
-        position: relative;
-        top: 4rem;
-    }
-    #hero .container .row .hero-text h1{
-        font-size: 1.8rem;
-        position: relative;
-        right: 20%;
-        top: 10%;
-    }
-    #hero .container .row .hero-text .hero-btn{
-        font-size: 0.6rem;
-        padding: 0.5rem;
-        position: relative;
-        right: 20%;
-        top: 6%;
-    }
-    .fa-brands{
-        font-size: 0.8rem;
-        position: relative;
-        top: 6%;
-        right: 20%;
-        margin: 0 0.1rem;
-        padding: 0.2rem;
+    .home-btn{
+        justify-self: flex-start;
     }
 }
 #services{

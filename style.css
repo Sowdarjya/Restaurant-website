@@ -474,6 +474,23 @@ html{
         font-size: 1.1rem;
     }
 }
+@media screen and (max-width: 540px){
+    .testimonial-container p{
+        font-size: 0.7rem;
+        line-height: 0.8rem;
+    }
+    .testimonial-container img{
+        margin: 0.3rem auto;
+    }
+    .testimonial-container h3{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 360px){
+    .testimonial-container p{
+        line-height: 0.7rem;
+    }
+}
 #about{
     width: 100%;
     height: auto;

@@ -26,7 +26,7 @@
 html{
     scroll-behavior: smooth;
 }
-.container{
+#home .container{
     max-width: 1120px;
     margin-inline: 1.5rem;
 }
@@ -273,7 +273,7 @@ html{
     border-radius: 2rem;
 }
 #services .container{
-    padding: 3rem;
+    padding: 2rem;
 }
 #services .container .row{
     display: flex;

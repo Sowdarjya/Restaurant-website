@@ -281,7 +281,7 @@ html{
 }
 #services .container .row .service-card{
     text-align:center;
-    width: 31%;
+    width: 33%;
     height: 25rem;
     margin: 0 0.3rem 0 0.3rem;
     background: linear-gradient(to top right, var(--secondary-clr) 50%, var(--primary-clr) 70%);
@@ -290,7 +290,7 @@ html{
     transition: all 0.5s ease-in-out;
 }
 #services .container .row .service-img{
-    height: 10rem;
+    height: 8rem;
     padding: 0.7rem;
 }
 #services .container .row h3{
@@ -300,12 +300,56 @@ html{
     font-size: 1.5rem;
 }
 #services .container .row p{
-    padding: 0.5rem 1.5rem;
-    font-size: 1.1rem;
+    padding: 0.5rem 1.8rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
-#services .container .row .service-card:hover{
+.card-btn{
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    border-style: none;
+    border-radius: 1.2rem;
+    background: transparent;
+    color: var(--tertiary-clr);
+    border: 1px solid var(--tertiary-clr);
+    transition: all 0.5s ease-in-out;
+}
+.card-btn:hover{
+    background: var(--tertiary-clr);
+    color: var(--secondary-clr);
     cursor: pointer;
-    width: 32%;
+}
+@media screen and (max-width: 1000px) {
+    #services .container .row h3{
+        font-size: 1.3rem;
+        margin-bottom: 0.3rem;
+    }
+    #services .container .row p{
+        font-size: 0.8rem;
+        margin-bottom: 0.2rem;
+    }
+}
+@media screen and (max-width: 815px) {
+    #services .container .row{
+        flex-direction: column;
+    }
+    #services .container .row .service-card{
+        width: 100%;
+        height: auto;
+        margin: 0.2rem 0;
+    }
+    #services .container .row .service-img{
+        height: 7rem;
+        padding: 0.7rem;
+    }
+    #services .container .row p{
+        font-size: 01rem;
+    }
+    #services .container .row h3{
+        /* font-size: 1.3rem; */
+        margin-bottom: 0.2rem;
+    }
 }
 #platforms{
     text-align: center;

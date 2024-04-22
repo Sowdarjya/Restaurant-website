@@ -347,14 +347,13 @@ html{
         font-size: 01rem;
     }
     #services .container .row h3{
-        /* font-size: 1.3rem; */
         margin-bottom: 0.2rem;
     }
 }
 #platforms{
     text-align: center;
     width: 100%;
-    padding: 1rem 10rem;
+    padding: 1rem 2rem;
     background: linear-gradient(to bottom left, var(--secondary-clr) 50%, var(--primary-clr) 70%);
 }
 #platforms .container{
@@ -371,12 +370,12 @@ html{
     display: flex;
     overflow: hidden;
     align-items: center;
-    justify-content:center;
+    justify-content:space-around;
     padding: 0 5rem;
 }
 #platforms .row img{
     width: 5rem;
-    margin: 1rem 3rem;
+    margin: 1rem;
 }
 #reviews{
     width: 100%;
@@ -398,30 +397,10 @@ html{
 #reviews .container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-#reviews .ratings{
-    width: 29%;
-    height: 18rem;
-    background: linear-gradient(to top right, var(--secondary-clr) 50%, var(--primary-clr) 70%);
-    border-radius: 2rem;
-    text-align: center;
-}
-#reviews .container .ratings h1{
-    color: var(--tertiary-clr);
-    margin-bottom: 0;
-}
-#reviews .container .ratings h2{
-    color: var(--tertiary-clr);
-    font-size: 5rem;
-    margin-bottom: 1rem;
-}
-#reviews .container .ratings .fa-star{
-    font-size: 2.5rem;
-    color: var(--tertiary-clr);
+    justify-content: center;
 }
 #reviews .testimonials{
-    width: 70%;
+    width: 90%;
     height: 18rem;
     background: linear-gradient(to top left, var(--secondary-clr) 50%, var(--primary-clr) 70%);
     display: flex;
@@ -456,7 +435,7 @@ html{
     text-align: center;
     font-size: 1.2rem;
     line-height: 1.2rem;
-    font-weight: 600;
+    font-weight: 400;
 }
 .testimonial-container img{
     display: block;
@@ -466,9 +445,34 @@ html{
     height: 5rem;
 }
 .testimonial-container h3{
-    color: var(--tertiary-clr);
+    color: var(--secondary-clr);
     font-size: 1.5rem;
     text-align: center;
+    background: var(--tertiary-clr);
+}
+@media screen and (max-width: 875px) {
+    .testimonial-container p{
+        font-size: 1rem;
+    }
+    .testimonial-container img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .testimonial-container h3{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 670px) {
+    .testimonial-container p{
+        line-height: 1rem;
+    }
+    .testimonial-container img{
+        width: 2.8rem;
+        height: 2.7rem;
+    }
+    .testimonial-container h3{
+        font-size: 1.1rem;
+    }
 }
 #about{
     width: 100%;

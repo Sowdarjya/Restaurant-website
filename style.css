@@ -554,6 +554,31 @@ html{
     box-shadow:  0 0 0.3rem var(--secondary-clr);
     font-size: 1.6rem;
 }
+@media screen and (max-width: 1120px) {
+    #about .container .row .about-img img{
+        width: 25rem;
+    }
+}
+@media screen and (max-width: 970px) {
+    #about .container .row .about-img img{
+        width: 22rem;
+    }
+}
+@media screen and (max-width: 850px) {
+    #about .container .row{
+        flex-direction: column;
+    }
+    #about .container .row .about-img{
+        width: 100%;
+        text-align: center;
+    }
+    #about .container .row .about-img img{
+        width: 100%;
+    }
+    #about .container .row .about-text{
+        width: 100%;
+    }
+}
 #contact{
     width: 100%;
     height: auto;

@@ -371,11 +371,28 @@ html{
     overflow: hidden;
     align-items: center;
     justify-content:space-around;
-    padding: 0 5rem;
+    padding: 0 3rem;
 }
 #platforms .row img{
     width: 5rem;
     margin: 1rem;
+}
+@media screen and (max-width: 650px) {
+    #platforms .row img{
+        width: 3.5rem;
+        margin: 0.5rem;
+    }
+}
+@media screen and (max-width: 420px) {
+    #platforms .row img{
+        width: 3rem;
+        margin: 0.5rem;
+    }
+}
+@media screen and (max-width: 420px) {
+    #platforms p{
+        font-size: 1.5rem;
+    }
 }
 #reviews{
     width: 100%;

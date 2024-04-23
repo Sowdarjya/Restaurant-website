@@ -683,11 +683,35 @@ html{
     display: inline;
     font-size: 1.2rem;
     width: 20%;
-    padding: 0.3rem;
+    padding: 0.6rem;
     text-transform: uppercase;
     color: var(--primary-clr);
     background: var(--tertiary-clr);
-    border-radius: 1rem;
+    border-radius: 2rem;
     cursor: pointer;
     border-style: none;
+}
+@media screen and (max-width: 960px) {
+    #contact .container .row .contact-form form .contact-btn{
+        font-size: 1rem;
+        padding: 0.4rem;
+    }
+}
+@media screen and (max-width: 820px) {
+    #contact .container .row .contact-form form .contact-btn{
+        font-size: 0.9rem;
+        padding: 0.3rem;
+    }
+}
+@media screen and (max-width: 750px) {
+    #contact .container .row{
+        flex-direction: column-reverse;
+    }
+    #contact .container .row .contact-details{
+        width: 100%;
+        text-align: center;
+    }
+    #contact .container .row .contact-form{
+        width: 100%;
+    }
 }

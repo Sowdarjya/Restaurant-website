@@ -493,18 +493,24 @@ html{
 }
 @media screen and (max-width: 540px){
     .testimonial-container p{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         line-height: 0.8rem;
     }
     .testimonial-container img{
-        margin: 0.3rem auto;
+        margin: 0.5rem auto;
     }
     .testimonial-container h3{
         font-size: 0.8rem;
     }
+    #reviews .container button{
+        font-size: 1rem;
+        height: 1rem;
+        width: 1rem;
+    }
 }
-@media screen and (max-width: 360px){
+@media screen and (max-width: 385px){
     .testimonial-container p{
+        font-size: 0.7rem;
         line-height: 0.7rem;
     }
 }
@@ -713,5 +719,11 @@ html{
     }
     #contact .container .row .contact-form{
         width: 100%;
+    }
+}
+@media screen and (max-width: 450px) {
+    #contact .container .row .contact-form form .contact-btn{
+        font-size: 0.6rem;
+        padding: 0.6rem 0.2rem;
     }
 }

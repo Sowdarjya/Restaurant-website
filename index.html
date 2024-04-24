@@ -141,10 +141,11 @@
                 <div class="contact-form">
                     <h2>get in touch</h2>
                     <hr>
-                    <form>
-                        <input class="contact-element" type="text" placeholder="Full name" required="required">
-                        <input class="contact-element" type="email" placeholder="Email" required="required">
-                        <textarea class="contact-element" name="message" placeholder="Your message"></textarea>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="18feea69-e871-496d-a77a-6d3f434a78ea">
+                        <input name="name" class="contact-element" type="text" placeholder="Full name" required="required">
+                        <input name="email" class="contact-element" type="email" placeholder="Email" required="required">
+                        <textarea name="message" class="contact-element" name="message" placeholder="Your message"></textarea>
                         <button type="submit" class="contact-btn">submit</button>
                     </form>
                 </div>

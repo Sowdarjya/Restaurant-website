@@ -94,6 +94,14 @@ nav .logo{
         font-size: 1.6rem;
     }
 }
+@media screen and (max-width: 380px){
+    nav .logo{
+        font-size: 1rem;
+    }
+    nav .openMenu{
+        margin: 0.2rem;
+    }
+}
 #home .container{
     max-width: 1120px;
     margin-inline: 1.5rem;

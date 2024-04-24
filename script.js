@@ -1,17 +1,16 @@
-const menuBar = document.getElementById("menu-bar");
-const menuCross = document.getElementById("menu-cross");
-const navBar = document.getElementById("nav-list");
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
 
-function openMenu() {
-    navBar.style.top = "35px";
-    menuCross.style.visibility = "visible";
-    menuBar.style.visibility = "hidden";
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',hide);
+
+function show(){
+    mainMenu.style.display = "flex";
+    mainMenu.style.top = "0";
 }
-
-function closeMenu() {
-    navBar.style.top = "-500px";
-    menuCross.style.visibility = "hidden";
-    menuBar.style.visibility = "visible";
+function hide(){
+    mainMenu.style.top = "-100%";
 }
 
 const reviews = [{
